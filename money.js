@@ -91,7 +91,12 @@ do {
 } while (response != -1);
 
 try {
-    document.getElementById("out").innerHTML = eval(str);
+    if (eval(str) != null) {
+        document.getElementById("out").innerHTML = eval(str);
+    }
+    else {
+        document.getElementById("out").innerHTML = "Wrong! Sad!";
+    }
 } catch (err) {
     document.getElementById("out").innerHTML = "Wrong! Sad!";
 }
