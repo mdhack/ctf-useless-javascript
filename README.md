@@ -1,0 +1,1 @@
+# ctf-useless-javascript
